@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+
+
+
+import React, { useState } from 'react';
 import './App.css';
+import {Inc}  from './Increase';
+import {Dec}  from './Decrease';
 
 function App() {
+  let [count, setCount] = useState(0)
+  let [isMorning, setMorning] = useState(true)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <div >
+      {/* TODO: Icreament in Value Should Apear in <Inc> & Decreament in <Dec> Components */}
+      <br />
+      <h3>Value of variable count is: {count} </h3>
+      <br />
+      <Inc value={count}></Inc>
+      <button onClick={() => setCount(++count)}>
+        Increase Value
+      </button>
+      <br />
+      <Dec value={count} ></Dec>
+      <button onClick={() => setCount(--count)}>
+        Decrease Value
+      </button>
     </div>
+
+    <div className= {`${isMorning? 'sunRise' : 'box'}`}>
+      <h4>Setting Time-Zone</h4>
+      <br />
+      <h1>Good {isMorning? "Morning" : "Night"}!</h1>
+      <br />
+    <button id='timeBtn' onClick={()=> setMorning(!isMorning)}>Change Time</button>
+
+    </div>
+    </div>
+    
   );
 }
 
