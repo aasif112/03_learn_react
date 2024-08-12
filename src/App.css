@@ -1,7 +1,7 @@
 
 
 
-
+body  {margin-left: 2rem;}
 .box  { background-color: rgba(0, 0, 0, 0.5);
   margin: 2rem;
   padding: 4rem;
@@ -16,4 +16,25 @@
 #timeBtn   { background-color: rgba(255, 255, 255, 0.5);
              border: none;
              padding: 0.5rem;
+}
+
+.even   { background-color: lightblue;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.odd   { background-color: lightgreen;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight    { color: white;
+                background-color: blue;
+                padding: 0.5rem;
+              }
+.simple { color: black;
+
 }
