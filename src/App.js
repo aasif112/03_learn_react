@@ -1,42 +1,22 @@
+import React from 'react';
 
 
+// NEW CSS STYLE FILE:
+import './style.css'
 
-import React, { useState } from 'react';
-import './App.css';
-import {Inc}  from './Increase';
-import {Dec}  from './Decrease';
 
-function App() {
-  let [count, setCount] = useState(0)
-  let [isMorning, setMorning] = useState(true)
+function App({name, city, age }) {
   return (
-    <div>
-    <div >
-      {/* TODO: Icreament in Value Should Apear in <Inc> & Decreament in <Dec> Components */}
-      <br />
-      <h3>Value of variable count is: {count} </h3>
-      <br />
-      <Inc value={count}></Inc>
-      <button onClick={() => setCount(++count)}>
-        Increase Value
-      </button>
-      <br />
-      <Dec value={count} ></Dec>
-      <button onClick={() => setCount(--count)}>
-        Decrease Value
-      </button>
-    </div>
+    <div className="appjs">
+    <h4>--------------START App.js------------</h4>
+      <div>
+      <h4>  Hello World! APP.JS  </h4>
+      <h1>I am {name} from {city} </h1>
+      <h1>I am {age} next year I will complete my course at the age of {age +1} </h1>
 
-    <div className= {`${isMorning? 'sunRise' : 'box'}`}>
-      <h4>Setting Time-Zone</h4>
-      <br />
-      <h1>Good {isMorning? "Morning" : "Night"}!</h1>
-      <br />
-    <button id='timeBtn' onClick={()=> setMorning(!isMorning)}>Change Time</button>
-
+      </div>
+    <h4>--------------END App.js------------</h4>
     </div>
-    </div>
-    
   );
 }
 
