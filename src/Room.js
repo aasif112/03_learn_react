@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import './style.css'
 
 export function Room() {
-    let [light, setLight] = useState(false)
+    let [light, setLight] = useState()    // ()-undefined means false
     let [buttonClicked, setButtonclicked] = useState(0)
     let [roomLit, setRoomlit] = useState(0)
     function click() {
