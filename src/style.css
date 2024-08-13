@@ -1,31 +1,48 @@
 
 
 
-
-.offerjs   {   background-color: lightgreen;
-    padding: 0.2rem;
-    padding-left: 0.5rem;
-    margin-left: 0.5rem;
-
+body    {
+        margin-left: 5rem;
+        margin-top: 1rem;
 }
 
-.appjs     {   background-color: lightsalmon;
-    padding: 0.2rem;
-    padding-left: 0.5rem;
-    margin-left: 0.5rem;
-
+button  {       background-color: rgba(0, 0, 0, 0.75);
+                padding: 0.5rem 1rem;
+                border: none;
+                color: white;
+}
+button:hover    {       font-weight: 600;
+                        cursor: pointer;
 }
 
-.app2js    {   background-color: lightseagreen;
-    padding: 0.2rem;
-    padding-left: 0.5rem;
-    margin-left: 0.5rem;
-}
+
+.room   {   background-color: lightslategray;
+            padding: 5rem;
+            height: 10rem;
+            margin: 5rem;
+            align-content: center;
+            justify-content: center;
+            color: white;
+        }
+
+.darkRoom   {   background-color: black;
+                padding: 5rem;
+                height: 10rem;
+                margin: 3rem;
+                align-content: center;
+                justify-content: center;
+                color: white;
+        }
+
+.litRoom   {    background-color: yellow;
+                padding: 5rem;
+                height: 10rem;
+                margin: 3rem;
+                align-content: center;
+                justify-content: center;
+                color: black;
+        }
+
     
 
-#hellojs {  background-color: rgb(253, 209, 87);
-    padding: 0.2rem;
-    padding-left: 0.5rem;
-    margin-left: 0.5rem;
 
-}
