@@ -2,21 +2,6 @@
 
 
 body  {margin-left: 2rem;}
-.box  { background-color: rgba(0, 0, 0, 0.5);
-  margin: 2rem;
-  padding: 4rem;
-}
-
-.sunRise   { background-color: yellow;
-              margin: 2rem;
-              padding: 4rem;
-
-          }
-
-#timeBtn   { background-color: rgba(255, 255, 255, 0.5);
-             border: none;
-             padding: 0.5rem;
-}
 
 .even   { background-color: lightblue;
   padding: 1rem 2rem;
@@ -25,6 +10,13 @@ body  {margin-left: 2rem;}
   justify-content: center;
 }
 .odd   { background-color: lightgreen;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.start   { background-color: lightgray;
   padding: 1rem 2rem;
   border-radius: 2rem;
   align-items: center;
