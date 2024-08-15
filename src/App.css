@@ -1,6 +1,9 @@
 
 
 
+body  { margin-left: 5rem;
+
+}
 
 .box  { background-color: rgba(0, 0, 0, 0.5);
   margin: 2rem;

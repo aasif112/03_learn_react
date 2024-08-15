@@ -6,6 +6,10 @@ import './App.css';
 import {Inc}  from './Increase';
 import {Dec}  from './Decrease';
 
+// REACT URDU CLASS ON-HAND PRACTICE:
+// 1) INCREASE-VALUE & DECREASE-VALUE
+// 2) CHANGE BACK_GROUND COLOR 
+
 function App() {
   let [count, setCount] = useState(0)
   let [isMorning, setMorning] = useState(true)
