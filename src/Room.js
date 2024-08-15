@@ -3,7 +3,7 @@
 
 import React, { useState } from "react";
 
-import './style.css'
+import './Room.css'
 
 export function Room() {
     let [light, setLight] = useState()    // ()-undefined means false
